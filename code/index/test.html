@@ -55,58 +55,62 @@
 </head>
 <body>
 
-<div class="top">
-    <button id="firstPage">
-        <span class="icon-home"></span>
-        首页
-    </button>
-    <button id="prevPage">
-        <span class="icon-next icon"></span>
-        上一页
-    </button>
-    <span class="page-info" id="pageInfo">
+<div id="main">
+    <div class="top">
+        <div class="inner">
+            <button id="firstPage">
+                <span class="icon-home"></span>
+                首页
+            </button>
+            <button id="prevPage">
+                <span class="icon-next icon"></span>
+                上一页
+            </button>
+            <span class="page-info" id="pageInfo">
         <input id="pageInput" value="1" />  <span id="totalPages">0</span>
     </span>
 
-    <button id="nextPage">
+            <button id="nextPage">
         <span class="icon-next-page icon">
 
         </span>
-        下一页</button>
-    <button id="lastPage">
+                下一页</button>
+            <button id="lastPage">
         <span class="icon-last icon">
 
         </span>
-        末页</button>
-    <button id="printPage">
+                末页</button>
+            <button id="printPage">
         <span class="icon-print icon">
 
         </span>
-        打印[客户端]</button> <!-- 新增打印按钮 -->
-    <button id="printPage2">
+                打印[客户端]</button> <!-- 新增打印按钮 -->
+            <button id="printPage2">
           <span class="icon-print1 icon">
           </span>
-        打印
-    </button>
+                打印
+            </button>
 
-    <button id="downloadPDF">
+            <button id="downloadPDF">
         <span class="icon-download icon">
 
         </span>
-        输出</button> <!-- 新增下载PDF按钮 -->
-    <button >
+                输出</button> <!-- 新增下载PDF按钮 -->
+            <button >
         <span class="icon-email icon">
 
         </span>
-        邮件
-    </button>
-    <button id="exportImage">
+                邮件
+            </button>
+            <button id="exportImage">
 
-        导出图片</button> <!-- 新增导出为图片按钮 -->
+                导出图片</button> <!-- 新增导出为图片按钮 -->
+        </div>
+    </div>
+
+    <div id="example1"></div>
 </div>
-
-<div id="example1"></div>
-
+<script src="../static/js/flixble.js"></script>
 <script>
     const url = "../static/pdf/001.pdf";  // PDF 文件路径
 
@@ -138,7 +142,7 @@
     function renderPage(pageNum) {
         pdfDoc.getPage(pageNum).then(function(page) {
             console.log('Page ' + pageNum + ' loaded');
-            const scale = 1.3;
+            const scale = 1;
             const viewport = page.getViewport({ scale: scale });
 
             const canvas = document.createElement("canvas");

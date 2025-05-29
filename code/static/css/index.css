@@ -1,15 +1,19 @@
 .top {
     border-bottom: 1px solid gray;
-    font-size: 12px !important;
-    padding: 10px;
+    font-size: 1rem !important;
+    padding: .625rem;
+    justify-content: flex-start;
 }
-
+.inner {
+    display: flex;
+    width: max-content;
+}
 .top button {
     border: none;
     position: relative;
-    padding-right: 10px;
-    margin-right: 10px;
-    font-size: 12px;
+    padding-right: .1rem;
+    margin-right: .625rem; 
+    font-size: 1rem;
     display: flex;
     align-items: center;
 
@@ -27,8 +31,8 @@
 .top button:after {
     position: absolute;
     content: '';
-    height: 10px;
-    width: 2px;
+    height: .625rem;
+    width: .125rem;
     background-color: rgb(214, 214, 214);
     top: 50%;
     transform: translateY(-50%);
@@ -37,45 +41,48 @@
 
 .icon-home {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     background-image: url("../images/icons.png");
-    background-position: 0 -51px;
+    background-position: 0 -3.1875rem;
+    background-size: 1rem auto;
+
 }
 
 .icon {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     background-image: url("../images/icons.png");
+    background-size: 1rem auto;
 }
 
 .icon-next {
-    background-position: 0 -70px;
+    background-position: 0 -4.375rem;
 }
 
 .icon-next-page {
-    background-position: 0 -90px;
+    background-position: 0 -5.625rem;
 }
 
 .icon-last {
-    background-position: 0 -108px;
+    background-position: 0 -6.75rem;
 }
 
 .icon-print {
-    background-position: 0 -162px;
+    background-position: 0 -10.125rem;
 }
 
 .icon-print1 {
-    background-position: 0 -379px;
+    background-position: 0 -23.6875rem;
 }
 
 .icon-download {
-    background-position: 0 -396px;
+    background-position: 0 -24.75rem;
 }
 
 .icon-email {
-    background-position: 0 -415px;
+    background-position: 0 -25.9375rem;
 }
 
 
@@ -83,14 +90,14 @@
 #pageInfo {
     color: black;
     position: relative;
-    padding-right: 30px;
+    padding-right: 1.875rem;
 }
 
 #pageInfo:after {
     position: absolute;
     content: '';
-    height: 10px;
-    width: 2px;
+    height: .625rem;
+    width: .125rem;
     background-color: rgb(214, 214, 214);
     top: 50%;
     transform: translateY(-50%);
@@ -98,14 +105,14 @@
 }
 
 #pageInfo input {
-    width: 50px;
+    width: 3.125rem;
     color: black;
-    font-size: 12px;
+    font-size: .75rem;
     border: 1px solid rgb(204, 205, 215);
-    margin-right: 15px;
+    margin-right: .9375rem;
 }
 
 .page-info {
-    font-size: 12px;
-    margin-right: 10px;
+    font-size: .75rem;
+    margin-right: .625rem;
 }
